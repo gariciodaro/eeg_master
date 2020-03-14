@@ -142,6 +142,7 @@ def concat_prepare_cnn(input_signal):
 	    train_cnt,
 	)
 
+
 	train_cnt = mne_apply(
 	    lambda a: exponential_running_standardize(
 	        a.T,
@@ -151,6 +152,7 @@ def concat_prepare_cnn(input_signal):
 	    ).T,
 	    train_cnt,
 	)
+	
 	
 	marker_def = OrderedDict(
 	    [
